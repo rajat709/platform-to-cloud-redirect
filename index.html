@@ -10,7 +10,7 @@
         const path = window.location.pathname;
         const searchParams = window.location.search;
 
-        // Construct the new URL
+        // Construct the new URL (corrected for single slash)
         const newUrl = currentUrl.replace('platform.dataoorts.com', 'cloud.dataoorts.com') + path + searchParams;
 
         // Redirect the user

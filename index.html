@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        // Get the current URL components
+        const currentUrl = window.location.href;
+        const path = window.location.pathname;
+        const searchParams = window.location.search;
+
+        // Construct the new URL
+        const newUrl = currentUrl.replace('platform.dataoorts.com', 'cloud.dataoorts.com') + path + searchParams;
+
+        // Redirect the user
+        window.location.href = newUrl;
+    </script>
+</head>
+<body>
+  <p>Redirecting you to cloud.dataoorts.com</p> 
+</body>
+</html>
